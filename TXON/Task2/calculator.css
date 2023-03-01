@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+html,
+body {
+    font-size: 16px;
+    font-family: sans-serif;
+    height: 100%;
+}
+
+body {
+    background: grey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.calculator {
+    background: #ffffff;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: .75rem;
+    width: 320px;
+    border: 1px solid grey;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.calci {
+    grid-column: 1 / 5;
+    border-radius: .60rem;
+    font-size: 2rem;
+    height: 6rem;
+    color: #fff;
+    background: #cdeef4;
+    text-align: right;
+    padding: .5rem;
+    width: 95%;
+}
+
+input {
+    border: none;
+
+}
+
+input:focus {
+    outline: none;
+}
+
+button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    height: 3rem;
+    width: 4.5rem;
+}
+
+button:focus {
+    outline: none;
+}
+
+.symbol,
+.number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    aspect-ratio: 1;
+    font-size: 1.25rem;
+    color: #fff;
+    border-radius: 20%;
+    transition: .15s ease;
+}
+
+.symbol {
+    background: #72cede;
+}
+
+.symbol:hover {
+    background: #007a8d;
+}
+
+.number {
+    background: #cdeef4;
+}
+
+.number:hover {
+    background: #333849;
+}
